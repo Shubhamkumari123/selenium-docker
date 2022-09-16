@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="linkdinlogin-module" parallel="tests">
+    <test name="Login Tests in firefox">
+        <classes>
+            <class name="com.linkdin.test.LinkdinTest"/>
+        </classes>
+    </test>
+
+</suite>
