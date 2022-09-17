@@ -1,14 +1,9 @@
 pipeline {
-agent any
+    agent any
     stages {
         stage('Build Jar') {
-            agent {
-                docker {
-                    image 'maven:3.5.0'
-                }
-            }
             steps {
-                sh 'mvn clean package -DskipTests'
+               sh 'mvn clean package -DskipTests'
             }
         }
         stage('Build Image') {
