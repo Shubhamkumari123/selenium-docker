@@ -5,7 +5,6 @@ pipeline {
       agent {
         docker {
           image 'maven:3.8.6'
-          args '-v $PWD/.m2:/root/.m2'
         }
       }
       steps {
