@@ -2,9 +2,9 @@ pipeline {
     agent none
     stages {
         stage('Build Jar') {
-            steps {
+            agent {
                docker {
-                 image 'maven:3-alpine'
+                 image 'maven:3.5.0'
                }
             }
             steps {
